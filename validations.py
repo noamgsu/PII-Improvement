@@ -35,7 +35,7 @@ class Validations:
 
     def is_keywords_found_in_text(self, text, keywords):
         for keyword in keywords:
-            if keyword in text:
+            if keyword.lower() in text.lower():
                 return True
 
         return False
